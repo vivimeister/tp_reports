@@ -1,0 +1,21 @@
+<head>
+  <title>tp_reports</title>
+</head>
+
+<body>
+  <h1>Transfer Pricing Reports</h1>
+  {{> reportInputs}}
+  {{> reportBody}}
+</body>
+
+<template name="reportInputs">
+  <form>
+    Tested Party Name: <input type="text" placeholder="Company X" id="tested-party-name">
+    Fiscal Year: <input type="text" placeholder="Fiscal Year" id="tested-party-year">
+    <input type="submit" value="Create this shit">
+  </form>
+</template>
+
+<template name="reportBody">
+    {{testedPartyName}} Transfer Pricing Report for the Fiscal Year Ended {{testedPartyYear}}
+</template>
